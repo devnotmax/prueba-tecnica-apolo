@@ -1,0 +1,109 @@
+.form-container {
+  background-color: #f1ecee4d;
+  color: var(--text-color);
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  background-color: #fff;
+}
+
+input[type="email"]:valid,
+input[type="password"]:valid,
+input[type="text"]:valid {
+  border-color: green;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  width: 100%;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+input:valid {
+  border-color: green;
+}
+
+input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px var(--primary-color);
+}
+
+input,
+button {
+  transition: all 0.3s ease;
+}
+
+input:valid {
+  border-color: green;
+}
+
+.NameInput input {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  background-color: var(--primary-color);
+  color: #a51212;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  opacity: 0.2;
+  background-color: #ccc;
+  color: black;
+  cursor: not-allowed;
+}

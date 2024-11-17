@@ -1,0 +1,49 @@
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px;
+  width: 70%;
+  background-color: darkgray;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.filters select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--secondary-color);
+  font-size: 16px;
+  background-color: var(--quaternary-color);
+  color: black;
+  transition: all 0.3s ease;
+  width: 150px;
+}
+
+.filters select:hover {
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: black;
+}
+
+.filters select[name="status"] {
+  background-color: #f0f0f0;
+}
+
+.filters select[name="species"] {
+  background-color: #e0e0e0;
+}
+
+.filters select[name="gender"] {
+  background-color: #d0d0d0;
+}
+
+@media (max-width: 600px) {
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filters select {
+    width: 100%;
+  }
+}

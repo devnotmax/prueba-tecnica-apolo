@@ -1,42 +1,127 @@
-#root {
-  max-width: 1280px;
+/* Estilo base para la aplicación */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el contenedor principal tenga al menos la altura de la ventana */
+}
+
+.main-content {
+  flex: 1; /* Hace que el contenido principal ocupe el espacio restante */
+}
+
+footer {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: var(--spacing-medium);
+  border-top: 1px solid var(--border-color);
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #8786d8;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+form {
+  max-width: 400px;
   margin: 0 auto;
-  padding: 2rem;
+}
+
+h2 {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+li{
+  color: white;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  padding: 10px 20px;
+  background-color: #8786d8;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+Link{
+  text-decoration: none;
+  color: white;
 }
 
-.card {
-  padding: 2em;
+/* styles.css o un archivo específico de tu proyecto */
+.not-found {
+  text-align: center;
+  padding: 50px;
+  gap: 10px;
 }
 
-.read-the-docs {
-  color: #888;
+.not-found h1 {
+  font-size: 3rem;
+  color: #ff6347; /* Puedes elegir cualquier color */
+}
+
+.not-found p {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.go-home-link {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--accent-color);
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #1b1a55;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.go-home-link:hover {
+  background-color: #45a049;
+  color: black;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #f6b17a; /* O el color que prefieras */
+  padding: 20px;
+}
+
+.filters-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.characters-list{
+  display: grid;
+  padding: 10px 40px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.nav-link-personajes{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #1b1a55;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
